@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ - Nginx Reverse Proxy Lab</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #e0e0e0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px 50px;
+            max-width: 560px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e94560;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #a0aec0;
+            margin-bottom: 30px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+
+        .info-table tr {
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .info-table tr:last-child {
+            border-bottom: none;
+        }
+
+        .info-table td {
+            padding: 12px 8px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        .info-table td:first-child {
+            color: #a0aec0;
+            font-weight: 600;
+            width: 45%;
+        }
+
+        .info-table td:last-child {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .tech-stack {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .tech-tag {
+            background: rgba(233, 69, 96, 0.15);
+            border: 1px solid rgba(233, 69, 96, 0.4);
+            color: #e94560;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 5px 14px;
+            border-radius: 50px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.78rem;
+            color: #4a5568;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">Static Page · Nginx</span>
+
+        <h1>Nginx Reverse Proxy</h1>
+        <p class="subtitle">Session 07 – Bài 4: Cấu hình Nginx Reverse Proxy cho Spring Boot</p>
+
+        <table class="info-table">
+            <tr>
+                <td>Họ và tên</td>
+                <td>Ngô Trung Chiến</td>
+            </tr>
+            <tr>
+                <td>Mã lớp</td>
+                <td>HN_KS24_CNTT2_IT209</td>
+            </tr>
+            <tr>
+                <td>Môn học</td>
+                <td>IT209 – DevOps</td>
+            </tr>
+            <tr>
+                <td>Web server</td>
+                <td>Nginx (Static Serve + Reverse Proxy)</td>
+            </tr>
+            <tr>
+                <td>Backend</td>
+                <td>Spring Boot · Port 8082</td>
+            </tr>
+            <tr>
+                <td>Trạng thái</td>
+                <td>✅ Đang hoạt động</td>
+            </tr>
+        </table>
+
+        <div class="tech-stack">
+            <span class="tech-tag">Nginx</span>
+            <span class="tech-tag">Spring Boot</span>
+            <span class="tech-tag">Reverse Proxy</span>
+            <span class="tech-tag">DevOps</span>
+        </div>
+
+        <p class="footer">Phục vụ tĩnh tại <strong>/</strong> · API chuyển tiếp tại <strong>/api/</strong> → :8082</p>
+    </div>
+</body>
+</html>
